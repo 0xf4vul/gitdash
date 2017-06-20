@@ -23,9 +23,20 @@ class Repo extends React.Component {
           showExpandableButton={true}
         />
         <CardActions style={{textAlign: 'center'}}>
-          <StarIcon style={{fontSize: '36px', marginRight: '20px'}}/>
-          <ForkIcon style={{fontSize: '36px', marginRight: '20px'}}/>
-          <EyeIcon style={{fontSize: '36px'}}/>
+          <div style={{whiteSpace: 'nowrap'}}>
+          <ul style={{listStyleType: 'none', marginRight: '10px', marginLeft: '-40px', display: 'inline-block'}}>
+            <li><StarIcon style={{fontSize: '36px', marginBottom: '10px'}}/></li>
+            <li><a>12</a></li>
+          </ul>
+          <ul style={{listStyleType: 'none', marginRight: '10px', display: 'inline-block'}}>
+            <li><ForkIcon style={{fontSize: '36px', marginBottom: '10px'}}/></li>
+            <li><a>12</a></li>
+          </ul>
+          <ul style={{listStyleType: 'none', display: 'inline-block'}}>
+            <li><EyeIcon style={{fontSize: '36px', marginBottom: '10px'}}/></li>
+            <li><a>12</a></li>
+          </ul>
+        </div>
         </CardActions>
         <CardText expandable={true}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
