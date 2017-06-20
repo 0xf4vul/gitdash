@@ -12,7 +12,7 @@ class App extends Component {
       <MuiThemeProvider>
         <div>
           <NavBar/>
-          <Repo/> // add grid system here
+          <Repo/>
         </div>
       </MuiThemeProvider>
     );
